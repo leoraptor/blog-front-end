@@ -1,38 +1,285 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+::selection {
+  color: white;
+  background: #1a1a1a;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+.navbar {
+  height: 60px;
+  width: 100%;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70rem;
+  margin: 0px auto;
+  background: #e9e9e9;
+}
+.logo {
+  color: #222222;
+  font-size: 30px;
+  font-weight: 600;
+  background: #e9e9e9;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.searchBar {
+  border-radius: 20px;
+  padding: 4px 15px 4px 35px;
+  font-size: 14px;
+  font-family: "Inter", system-ui;
+  font-weight: 400;
+  color: #636363;
+  min-width: 500px;
+  background: white;
+  border: 0.5px solid #bbbbbb;
+  outline: none;
+}
+.searchBar::placeholder {
+  font-weight: 400;
+}
+.homePostImg {
+  height: 300px;
+  min-width: 450px;
+  border-radius: 4px;
+  background: #e9e9e9;
+}
+.homePostImg2 {
+  height: 350px;
+  min-width: 100%;
+  border-radius: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background: #e9e9e9;
+}
+.homePostTitle {
+  font-size: 30px;
+  font-weight: 500;
+  color: #000000;
+  /* font-family: "Inter", system-ui; */
+  font-family: "Open sans", sans-serif;
+}
+.author,
+.dateTime {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 5px 0px 10px 0px;
+  font-family: "Open sans", sans-serif;
+}
+.homePostText {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  /* font-family: "Inter", system-ui; */
+  font-family: "Open sans", sans-serif;
+}
+.loginLableText {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Inter", system-ui;
+}
+.loginLableText span {
+  color: red;
+}
+
+.loginInputFeild {
+  padding: 10px 15px;
+  border: 1.5px solid rgb(170, 170, 170);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Inter", system-ui;
+  outline: none;
+  color: #1a1a1a;
+}
+.loginInputFeild::placeholder {
+  font-weight: 400;
+}
+.loginInputFeild2 {
+  padding: 10px 35px 10px 15px;
+  border: 1.5px solid rgb(170, 170, 170);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Inter", system-ui;
+  outline: none;
+  color: #1a1a1a;
+}
+.loginInputFeild2::placeholder {
+  font-weight: 400;
+}
+.authBtn {
+  margin-top: 20px;
+  padding: 10px 5px;
+  background: #1a1a1a;
+  color: white;
+  font-family: "Inter", system-ui;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+}
+.navBtn {
+  padding: 6px 5px;
+  background: #1a1a1a;
+  color: white;
+  font-family: "Inter", system-ui;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+}
+.navBtngost {
+  padding: 5px 5px;
+  border: 0.5px solid black;
+  color: #1a1a1a;
+  font-family: "Inter", system-ui;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+}
+.deleteBtn {
+  padding: 5px 5px;
+  border: 0.5px solid rgb(255, 0, 0);
+  color: white;
+  background: red;
+  font-family: "Inter", system-ui;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+}
+.logTitle {
+  font-family: "Open sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1a1a1a;
+  margin-bottom: 25px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logTitle2 {
+  font-family: "Open sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+  text-align: start;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sText {
+  font-weight: 500;
+  font-size: 13px;
+  color: #525252;
+  font-family: "Inter", system-ui;
+  margin-top: 15px;
+  text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sText span {
+  font-weight: 400;
+  font-size: 13px;
+  color: #525252;
+  font-family: "Inter", system-ui;
+  margin-left: 5px;
+}
+.caterText {
+  font-size: 15px;
+  color: rgb(84, 84, 84);
+  font-weight: 500;
+  font-family: "Inter", system-ui;
+}
+.catergorie {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+}
+.comments {
+  margin-top: 10px;
+  background: #e9e9e9;
+  padding: 10px;
+}
+.commentText {
+  color: rgb(84, 84, 84);
+  font-weight: 500;
+  font-family: "Inter", system-ui;
+  font-size: 13px;
+}
+.commentFeild {
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Inter", system-ui;
+  font-weight: 400;
+  color: #222222;
+  border: 0.5px solid #bbbbbb;
+  outline: none;
+  width: 100%;
+}
+.commentFeild::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+}
+.authBtn2 {
+  margin-top: 10px;
+  padding: 10px 5px;
+  background: #1a1a1a;
   color: white;
+  font-family: "Inter", system-ui;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+}
+.addBtn {
+  background: #1a1a1a;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 11.5px 30px;
+  font-weight: 500;
+  font-size: 13px;
+  font-family: "Inter", system-ui;
+}
+.cateBox {
+  font-weight: 500;
+  font-size: 13px;
+  font-family: "Inter", system-ui;
+  background: #525252;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.errormsg {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Inter", system-ui;
+  color: red;
 }
 
-.App-link {
-  color: #61dafb;
+.errorBorder {
+  border: 1.5px solid #e80000;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.successBorder {
+  border: 1.5px solid #00c31e;
+}
+.Toastify__toast {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  color: black !important;
+  background-color: white !important;
+  font-weight: 500;
+  font-size: 13px;
+  font-family: "Inter", system-ui;
+  text-transform: capitalize;
 }
